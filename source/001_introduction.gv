@@ -1,4 +1,5 @@
 digraph introduction {
+    compound=true
     node [shape=box style="rounded"]
     LanMediumNode [label= "<f0>copper wires | <f1>fiberglass" shape=record ]
     LanMediumNode2 [label= "<f0>electricity | <f1>light" shape=record]
@@ -8,15 +9,16 @@ digraph introduction {
     "Enterprise computer networks" -> "Wide Area Networks (WANs)";
     "Local Area Networks (LANs)" -> "Ethernet LANs (wired LANs)";
     "Local Area Networks (LANs)" -> "Wireless LANs";
-    "Ethernet LANs (wired LANs)" -> LanMediumNode;
+    "Ethernet LANs (wired LANs)" -> LanMediumNode [lhead="cluster_medium"];
     "Wireless LANs" -> "radio waves";
     LanMediumNode:f0 -> LanMediumNode2:f0 
     LanMediumNode:f1 -> LanMediumNode2:f1
     "Local Area Networks (LANs)" -> LanNote [style="dashed"]
     "Wide Area Networks (WANs)" -> WanNote [style="dashed"]
     subgraph cluster_medium { 
-        label="medium" style="rounded" 
+        label="medium" style="rounded,dashed" 
         LanMediumNode; 
         LanMediumNode2;
         }
+        
 }
