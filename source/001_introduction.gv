@@ -3,8 +3,8 @@ digraph introduction {
     node [shape=box style="rounded"]
     LanMediumNode [label= "<f0>copper wires | <f1>fiberglass" shape=record ]
     LanMediumNode2 [label= "<f0>electricity | <f1>light" shape=record]
-    LanNote [label="connect nearby devices:\ndevices in the same room,\nbuilding or campus of buildings" shape=note]
-    WanNote [label="connect devices that are\n typically relatively far apart" shape=note]
+    LanNote [label="# connect nearby devices:\ndevices in the same room,\nbuilding or campus of buildings" shape=note]
+    WanNote [label="# connect devices that are\n typically relatively far apart" shape=note]
     "Enterprise computer networks" -> "Local Area Networks (LANs)";
     "Enterprise computer networks" -> "Wide Area Networks (WANs)";
     "Local Area Networks (LANs)" -> "Ethernet LANs (wired LANs)";
@@ -16,7 +16,7 @@ digraph introduction {
     "Local Area Networks (LANs)" -> LanNote [style="dashed"]
     "Wide Area Networks (WANs)" -> WanNote [style="dashed"]
     subgraph cluster_medium { 
-        label="medium" style="rounded,dashed" 
+        label="[ medium ]" style="rounded,dashed" 
         LanMediumNode; 
         LanMediumNode2;
         }
