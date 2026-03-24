@@ -8,7 +8,7 @@ All files can be tested directly online using Edotor.net:
 
 * Copy the DOT code from any file in the source directory
 
-* Paste it in the left area (replacing the existing code)
+* Paste it in the left area of edotor (replacing the existing code)
 
 * See the immediate rendering in the right area
 
