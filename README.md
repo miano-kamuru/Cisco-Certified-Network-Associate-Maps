@@ -5,11 +5,9 @@ My CNNA notes in written in DOT - a text-based graph description language. It’
 All files can be tested directly online using Edotor.net:
 
 * Go to (https://edotor.net/)
-
 * Copy the DOT code from any file in the source directory
-
 * Paste it in the left area of edotor (replacing the existing code)
-
+* Set Engine to DOT
 * See the immediate rendering in the right area
 
 It’s the fastest way to view and experiment without installing 
