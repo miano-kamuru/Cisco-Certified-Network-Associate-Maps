@@ -13,8 +13,8 @@ digraph introduction {
     "Wireless LANs" -> "radio waves";
     LanMediumNode:f0 -> LanMediumNode2:f0 
     LanMediumNode:f1 -> LanMediumNode2:f1
-    "Local Area Networks (LANs)" -> LanNote [style="dashed"]
-    "Wide Area Networks (WANs)" -> WanNote [style="dashed"]
+    "Local Area Networks (LANs)" -> LanNote [style="dashed" arrowhead=none]
+    "Wide Area Networks (WANs)" -> WanNote [style="dashed" arrowhead=none]
     subgraph cluster_medium { 
         label="[ medium ]" style="rounded,dashed" 
         LanMediumNode; 
